@@ -89,7 +89,8 @@ panic = "abort"
 #![no_std]     // Don't use standard library
 #![no_main]    // No standard main function
 
-use panic_halt as _;           // Import panic handler
+// Imports
+use panic_halt as _;           // panic handler
 use cortex_m_rt::entry;        // Entry point macro
 use stm32f4xx_hal::{pac, prelude::*};
 
@@ -112,7 +113,7 @@ fn main() -> ! {
     
     // Main application loop
     loop {
-        // LED sequences...
+        // LED sequences logic...
     }
 }
 ```
